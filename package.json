@@ -1,0 +1,19 @@
+{
+  "name": "node-vscode-debug-issue",
+  "version": "1.0.0",
+  "description": "node debug issue",
+  "main": "dist/src/start.js",
+  "scripts": {
+    "start": "node --inspect=0.0.0.0:9229 dist/src/start",
+    "dstart": "node --inspect-brk --inspect dist/src/start"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}
