@@ -1,5 +1,5 @@
 
-This repo is to illustrate a new bug that occured when upgrading to node.js 10.12 (from node 10.11) which prevent VSCode to find the source debug files. 
+This repo is to illustrate a new bug that occured when upgrading to node.js 10.12 (from node 10.11) which prevent VSCode to find the source debug files when running the server on docker with node 10.12 and above. Best case scenario You get only the "read-only core module" file, worst case scenario when using .map file (e.g., with .ts source file), the breakpoints on .ts files are all unverified (works fine on node 10.11 and below).
 
 To reproduce this issue (with VSCode 1.28.2)
 
